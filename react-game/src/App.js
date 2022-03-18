@@ -1,13 +1,18 @@
 import './App.css';
-import GameList from './components/GameList';
 import Header from './components/Header';
+import Navigation from './components/Navigation';
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <Header name={"Dream Play"}/>
-      <GameList />
+      <Header name={"Dream Play"} />
+      <Navigation />
     </div>
+
   );
 }
 
