@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 import Game from './Game';
+import '../styles/gameList.css'
 
 
 
@@ -24,17 +25,22 @@ const GameList = () => {
     return (
         <div>
 
-            <div>
-                <h1>The list of games</h1>
-                <button onClick={bestGames}> {clickGame ? 'Show me all games !' : 'Show me the best games !'}</button>
+            <div className='gamelist'>
+                <div>
+                    <h1 className='gamelist-title'>The different games</h1>
+                </div>
+                <div className='gamelist-button'>
+                    <button className='gamelist-button' onClick={bestGames}> {clickGame ? 'Show me all games !' : 'Show me the best games !'}</button>
+                </div>
+                <div className='gamelist-game'>
                 {allGames
-                    .filter((game) => !clickGame || game.rating > 4.5)
-                    .map(game => {
-                        return <Game key={game.id} {...game} />
-
-                    })}
+                        .filter((game) => !clickGame || game.rating > 4.5)
+                        .map(game => {
+                            return <Game key={game.id} {...game} />
+                        })}
+                </div>
             </div>
-            
+
         </div>
     );
 };

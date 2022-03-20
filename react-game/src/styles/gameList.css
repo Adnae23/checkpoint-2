@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
+
+/*component gameList*/
+.gamelist-game{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gamelist-title{
+    text-align: center;
+    background-color: rgb(95, 95, 95);
+}
+
+.gamelist-button{
+    font-family: Big Shoulders Inline Display, 'sans serif';
+    font-size: 40px;
+}
+
+
+/*component game*/
+
+
+.game-onlyOne{
+    height: 500px;
+    width: 500px;
+}
+
+h1 {
+    height: 60px;
+}
+
+.game-img{
+    width: 450px;
+    height: 290px;
+}
+
+.game-btn{
+    width: 30%;
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
+
+.header-title{
+    font-size: 70px;
+    text-align: center;
+}
+
+.header-welcome {
+    background-color: rgb(207, 207, 207);
+    font-size: 40px;
+    text-align: center;
+}
+
+.header-paragraph {
+    font-family: Big Shoulders Inline Display, 'sans serif';
+    font-size: 40px;
+    background-color: rgb(207, 207, 207);
+    text-align: center;
+}

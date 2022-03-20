@@ -1,0 +1,13 @@
+
+
+.gameDetails{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    margin: auto;
+    width: 60%;
+    height: auto;
+}

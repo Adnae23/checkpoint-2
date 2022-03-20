@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import '../styles/gameDetails.css'
 
 const GameDetails = () => {
  
@@ -16,7 +17,7 @@ const GameDetails = () => {
     }, [id])
 
     return (
-        <div>
+        <div className='gameDetails'>
             <h1>{soloGame.name}</h1>
             <h3>Creation date: {soloGame.released}</h3>
             <p>Rating: {soloGame.rating}</p>

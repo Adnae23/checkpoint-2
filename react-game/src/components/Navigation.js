@@ -1,17 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import GameList from './GameList';
 import GameDetails from './GameDetails';
 
-const Navigation = (props) => {
+
+const Navigation = () => {
     return (
-        <div>
+        <div className='navigation'>
 
             <nav>
-                <ul>
+                <ul className='navigation-link'>
                     <li>
-                        <Link to='/'>List of games</Link>
+                        <NavLink ClassName='navigation-link__navlink' to='/'>List of games</NavLink>
                     </li>
                 </ul>
             </nav>

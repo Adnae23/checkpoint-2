@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
 body{
-    text-align: center;
+    font-family: Major Mono Display, 'sans serif';
+    margin: 10px;
 }
